@@ -53,6 +53,7 @@ if (process.argv[2] === 'all-dogs') {
   const values = [name, type, weight];
 
   // write the SQL query that inserts a new dog entry
+  // sqlQuery = 'INSERT INTO dogs(name, type, weight) VALUES ($1, $2, $3)';
   sqlQuery = `INSERT INTO dogs(name, type, weight) VALUES ('${name}', '${type}', ${weight})`;
 
   console.log(sqlQuery);
